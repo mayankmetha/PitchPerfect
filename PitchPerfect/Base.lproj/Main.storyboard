@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAg-pR-aO3"/>
-                                    <segue destination="RJL-O4-kXT" kind="show" id="NkY-uY-Rdj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,6 +61,7 @@
                         <outlet property="recordButton" destination="idr-fN-mUF" id="Ing-k5-qC1"/>
                         <outlet property="recordingLabel" destination="VhU-r8-qmm" id="t1z-rK-06G"/>
                         <outlet property="stopRecordingButton" destination="4ry-Ed-82F" id="Nw7-9s-2lh"/>
+                        <segue destination="RJL-O4-kXT" kind="show" identifier="stopRecording" id="ERP-XC-ZIJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,7 +71,7 @@
         <!--Options-->
         <scene sceneID="1iO-4R-4sI">
             <objects>
-                <viewController title="Options" id="RJL-O4-kXT" sceneMemberID="viewController">
+                <viewController title="Options" id="RJL-O4-kXT" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UIP-W0-Yh9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
