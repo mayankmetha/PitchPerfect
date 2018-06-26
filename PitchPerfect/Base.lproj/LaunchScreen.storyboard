@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,22 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-yw-jyf">
-                                <rect key="frame" x="32" y="20" width="311" height="627"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="TcP-sw-jst">
+                                <rect key="frame" x="32" y="112" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="ZLU-fa-UiX"/>
+                                    <constraint firstAttribute="height" constant="256" id="d2v-Bv-Hss"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ccq-yw-jyf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5t2-Xc-b8F"/>
-                            <constraint firstItem="ccq-yw-jyf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IHS-mW-Tke"/>
-                            <constraint firstItem="ccq-yw-jyf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JtA-QC-sBd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccq-yw-jyf" secondAttribute="trailing" constant="32" id="Tnb-Yp-lYk"/>
-                            <constraint firstItem="ccq-yw-jyf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ZmH-Hb-Yhh"/>
+                            <constraint firstItem="TcP-sw-jst" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="26C-cF-Vfp"/>
+                            <constraint firstItem="TcP-sw-jst" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="evy-5Q-BAf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="512" height="512"/>
+        <image name="Splash" width="1024" height="1024"/>
     </resources>
 </document>
