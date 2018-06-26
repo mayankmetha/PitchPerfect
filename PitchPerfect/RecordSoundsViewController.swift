@@ -19,7 +19,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     var audioRecorder: AVAudioRecorder!
     
     @IBOutlet weak var recordButton: UIButton!
-    @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var stopRecordingButton: UIButton!
     
     enum uiState { case play, stop }
@@ -76,13 +75,15 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     func configureUI(_ state: uiState) {
         switch(state) {
             case .play:
-                recordingLabel.text = "Recording in Progress"
                 stopRecordingButton.isEnabled = true
                 recordButton.isEnabled = false
+                stopRecordingButton.isHidden = false
+                recordButton.isHidden = true
             case .stop:
-                recordingLabel.text = "Tap to Record"
                 stopRecordingButton.isEnabled = false
                 recordButton.isEnabled = true
+                stopRecordingButton.isHidden = true
+                recordButton.isHidden = false
         }
     }
     

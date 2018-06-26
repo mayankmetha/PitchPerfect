@@ -18,48 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-7N-Igm">
-                                <rect key="frame" x="16" y="120" width="343" height="626"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idr-fN-mUF">
-                                        <rect key="frame" x="94" y="0.0" width="155" height="208.66666666666666"/>
-                                        <state key="normal" image="Record"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owF-4r-r6d"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhU-r8-qmm">
-                                        <rect key="frame" x="117" y="208.66666666666669" width="109.33333333333331" height="208.66666666666669"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ry-Ed-82F">
-                                        <rect key="frame" x="94" y="417.33333333333343" width="155" height="208.66666666666669"/>
-                                        <state key="normal" image="Stop"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAg-pR-aO3"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idr-fN-mUF">
+                                <rect key="frame" x="110" y="328" width="155" height="155"/>
+                                <state key="normal" image="Record"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owF-4r-r6d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ry-Ed-82F">
+                                <rect key="frame" x="110" y="328" width="155" height="155"/>
+                                <state key="normal" image="Stop"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAg-pR-aO3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7V2-7N-Igm" secondAttribute="bottom" constant="32" id="701-J1-tZK"/>
-                            <constraint firstItem="7V2-7N-Igm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eIV-yz-z0E"/>
-                            <constraint firstItem="7V2-7N-Igm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="tLC-Dv-v3f"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7V2-7N-Igm" secondAttribute="trailing" constant="16" id="zJt-PI-UdF"/>
+                            <constraint firstItem="idr-fN-mUF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4iN-51-8z9"/>
+                            <constraint firstItem="idr-fN-mUF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QcN-PR-GsX"/>
+                            <constraint firstItem="4ry-Ed-82F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eDD-Tj-spf"/>
+                            <constraint firstItem="4ry-Ed-82F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yY3-oU-NXz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -68,7 +57,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="recordButton" destination="idr-fN-mUF" id="Ing-k5-qC1"/>
-                        <outlet property="recordingLabel" destination="VhU-r8-qmm" id="t1z-rK-06G"/>
                         <outlet property="stopRecordingButton" destination="4ry-Ed-82F" id="Nw7-9s-2lh"/>
                         <segue destination="RJL-O4-kXT" kind="show" identifier="stopRecording" id="ERP-XC-ZIJ"/>
                     </connections>
